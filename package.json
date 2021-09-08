@@ -1,0 +1,27 @@
+{
+  "name": "reactive-programming-exposed",
+  "version": "0.0.1",
+  "author": "Hackages Team <007@hackages.io>",
+  "license": "See license",
+  "dependencies": {
+    "hackjam-banner": "0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.2",
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
+    "live-server": "^1.2.1",
+    "ts-jest": "^26.5.2",
+    "ts-loader": "^8.0.17",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "pretest": "npm install",
+    "start": "webpack serve",
+    "test": "jest --isolatedModules=false --config jest.config.js --json --outputFile=jest-report.json",
+    "test:watch": "jest --watch"
+  }
+}
